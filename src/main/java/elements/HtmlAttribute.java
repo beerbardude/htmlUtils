@@ -1,7 +1,5 @@
 package elements;
 
-import javax.annotation.Nonnull;
-
 public enum HtmlAttribute {
 
     TYPE("type="),
@@ -27,15 +25,15 @@ public enum HtmlAttribute {
         return "";
     }
 
-    public static String makeNameAttribute(@Nonnull String name) {
+    public static String makeNameAttribute(String name) {
         return SPACE + NAME.text + "\"" + name + "\"";
     }
 
-    public static String makeIdAttribute(@Nonnull String id) {
+    public static String makeIdAttribute(String id) {
         return SPACE + ID.text + "\"" + id + "\"";
     }
 
-    public static String makeValueAttribute(@Nonnull String value) {
+    public static String makeValueAttribute(String value) {
         return SPACE + VALUE.text + "\"" + value + "\"";
     }
 
